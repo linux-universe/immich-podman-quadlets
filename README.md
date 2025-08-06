@@ -37,3 +37,6 @@ Then start with
 or rootless:
 
 `systemctl --user start immich-server`
+
+## machine learning
+You need to change the machine learning url in the admin settings to `http://systemd-immich-machine-learning:3003` in order for machine learning to work
