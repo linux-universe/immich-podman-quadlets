@@ -1,6 +1,6 @@
 # immich-podman-quadlets
 
-The original Immich Docker Compose file rewritten in Podman Quadlet.
+The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten in Podman Quadlet.
 
 ## Steps
 
@@ -8,7 +8,7 @@ Clone to /etc/containers/systemd
 
 `git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd`
 
-Clone to `~/.config/containers/systemd/ for rootless
+Clone to ~/.config/containers/systemd/ for rootless
 
 Go trough every .container file and replace the ${} variables with the needen value.
 
