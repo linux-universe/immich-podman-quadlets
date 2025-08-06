@@ -1,0 +1,24 @@
+[Unit]
+Description=Immich Server
+Requires=immich-redis.container immich-database.container
+Wants=immich-machine-learning.container
+
+[Container]
+AutoUpdate=registry
+Network=immich.network
+Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
+Volume=${UPLOAD_LOCATION}:/data:z
+Volume=/etc/localtime:/etc/localtime:ro
+Environment=TZ=${TZ}
+Environment=DB_PASSWORD=${DB_PASSWORD}
+Environment=DB_USERNAME=postgres
+Environment=DB_DATABASE_NAME=immich
+Environment=DB_HOSTNAME=systemd-immich-database
+Environment=REDIS_HOSTNAME=systemd-immich-redis
+PublishPort=2283:2283
+
+[Service]
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target
