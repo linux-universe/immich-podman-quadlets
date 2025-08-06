@@ -2,7 +2,7 @@
 Description=Immich Database
 
 [Container]
-AutoUpdate=registry
+#AutoUpdate=registry
 Network=immich.network
 Image=ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0@sha256:32324a2f41df5de9efe1af166b7008c3f55646f8d0e00d9550c16c9822366b4a
 Environment=POSTGRES_PASSWORD=${DB_PASSWORD}

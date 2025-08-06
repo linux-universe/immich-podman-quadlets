@@ -4,7 +4,7 @@ Requires=immich-redis.container immich-database.container
 Wants=immich-machine-learning.container
 
 [Container]
-AutoUpdate=registry
+#AutoUpdate=registry
 Network=immich.network
 Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
 Volume=${UPLOAD_LOCATION}:/data:z
