@@ -16,6 +16,7 @@ Environment=DB_DATABASE_NAME=immich
 Environment=DB_HOSTNAME=systemd-immich-database
 Environment=REDIS_HOSTNAME=systemd-immich-redis
 PublishPort=2283:2283
+#AddDevice=/dev/dri
 
 [Service]
 TimeoutStartSec=900
