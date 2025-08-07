@@ -13,8 +13,6 @@ Environment=TZ=${TZ}
 Environment=DB_PASSWORD=${DB_PASSWORD}
 Environment=DB_USERNAME=postgres
 Environment=DB_DATABASE_NAME=immich
-Environment=DB_HOSTNAME=systemd-immich-database
-Environment=REDIS_HOSTNAME=systemd-immich-redis
 PublishPort=2283:2283
 #AddDevice=/dev/dri
 

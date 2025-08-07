@@ -4,6 +4,7 @@ Description=Immich Machine Learning
 [Container]
 #AutoUpdate=registry
 Network=immich.network
+HostName=immich-machine-learning
 Image=ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION}
 Volume=immich-model-cache:/cache
 

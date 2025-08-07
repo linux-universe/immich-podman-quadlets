@@ -39,10 +39,6 @@ The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/m
 > [!NOTE]
 > Run steps 3 and 4 with the `--user` argument for rootless setups.
 
-## Machine Learning
-
-You need to change the machine learning URL in the admin settings to `http://systemd-immich-machine-learning:3003` in order for it to work.
-
 ## Hardware Transcoding
 
 ### VAAPI (AMD / NVIDIA / Intel) & Quick Sync (Intel)
