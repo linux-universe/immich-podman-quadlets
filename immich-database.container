@@ -10,6 +10,8 @@ Environment=POSTGRES_PASSWORD=${DB_PASSWORD}
 Environment=POSTGRES_USER=postgres
 Environment=POSTGRES_DB=immich
 Environment=POSTGRES_INITDB_ARGS=--data-checksums
+#Uncomment DB_STORAGE_TYPE=HDD if your database isn't stored on SSDs
+#Environment=DB_STORAGE_TYPE=HDD
 Volume=${DB_DATA_LOCATION}:/var/lib/postgresql/data:z
 ShmSize=128mb
 
