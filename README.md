@@ -6,7 +6,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
 ## Steps
 
-1. Clone to `/etc/containers/systemd/immich`:
+1. Either clone or manually write the quadlet files to `/etc/containers/systemd/immich`:
 
    ```shell
    git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd/immich
