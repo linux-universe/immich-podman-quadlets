@@ -4,14 +4,14 @@ The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/m
 
 ## Steps
 
-1. Clone to `/etc/containers/systemd`:
+1. Clone to `/etc/containers/systemd/immich`:
 
    ```shell
-   git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd
+   git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd/immich
    ```
 
 > [!NOTE]
-> For rootless Podman setups, clone the repository to `~/.config/containers/systemd/` instead.
+> For rootless Podman setups, clone the repository to `~/.config/containers/systemd/immich` instead.
 
 2. Go through every `.container` file and replace the `${}` variables with the needed values.
 
