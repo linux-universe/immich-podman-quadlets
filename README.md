@@ -96,3 +96,6 @@ In the Admin page under **Video transcoding settings**, change the hardware acce
    AddDevice=nvidia.com/gpu=0 # Make sure this matched your GPU ID
    Unmask=/dev/dri:/dev/dri
    ```
+
+---
+thanks to [tbelways repo](https://github.com/tbelway/immich-podman-quadlets) for inspiration
