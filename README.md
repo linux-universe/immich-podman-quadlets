@@ -43,4 +43,57 @@ The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/m
 
 You need to change the machine learning URL in the admin settings to `http://systemd-immich-machine-learning:3003` in order for it to work.
 
----
+## Hardware Transcoding
+
+### VAAPI (AMD / NVIDIA / Intel) & Quick Sync (Intel)
+
+To enable VAAPI or Quick Sync hardware transcoding, uncomment the following line in `immich-server.container`:
+```
+AddDevice=/dev/dri
+```
+
+In the Admin page under **Video transcoding settings**, change the hardware acceleration setting to the appropriate option and save.
+
+### NVENC (NVIDIA)
+
+> [!NOTE]
+> As I don't have the necessary hardware, I couldn't test the Nvidia instruction. Any confirmation would be appreciated.
+
+Uncomment **and add** the following lines in `immich-server.container`:
+```
+AddDevice=/dev/dri
+AddDevice=nvidia.com/gpu=0 # Make sure this matches your GPU ID
+Unmask=/dev/dri:/dev/dri
+```
+
+In the Admin page under **Video transcoding settings**, change the hardware acceleration setting to the appropriate option and save.
+
+## Hardware-Accelerated Machine Learning
+
+> [!NOTE]
+> As I don't have the necessary hardware, I couldn't test the both the CUDA and ROCM instructions. Any confirmation would be appreciated.
+
+### ROCM (AMD)
+
+1. Add `-rocm` to the end of the Image= line in `immich-machine-learning.container`.
+2. Add the following lines in `immich-machine-learning.container` under `[Container]`.
+
+> [!NOTE]
+> You may need to add `Environment=HSA_OVERRIDE_GFX_VERSION="x.x.x"` depending on your GPU.
+
+   ```
+   GroupAdd=video
+   AddDevice=/dev/dri
+   AddDevice=/dev/kfd
+   ```
+
+### CUDA (NVIDIA)
+
+1. Add `-cuda` to the end of the Image= line in `immich-machine-learning.container`.
+2. Add the following lines in `immich-machine-learning.container` under `[Container]`.
+
+   ```
+   AddDevice=/dev/dri
+   AddDevice=nvidia.com/gpu=0 # Make sure this matched your GPU ID
+   Unmask=/dev/dri:/dev/dri
+   ```
