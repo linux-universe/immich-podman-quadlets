@@ -78,14 +78,13 @@ In the Admin page under **Video transcoding settings**, change the hardware acce
 1. Add `-rocm` to the end of the Image= line in `immich-machine-learning.container`.
 2. Add the following lines in `immich-machine-learning.container` under `[Container]`.
 
-> [!NOTE]
-> You may need to add `Environment=HSA_OVERRIDE_GFX_VERSION="x.x.x"` depending on your GPU.
-
    ```
    GroupAdd=video
    AddDevice=/dev/dri
    AddDevice=/dev/kfd
    ```
+   
+   You may need to add `Environment=HSA_OVERRIDE_GFX_VERSION="x.x.x"` depending on your GPU.
 
 ### CUDA (NVIDIA)
 
