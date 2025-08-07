@@ -1,42 +1,46 @@
 # immich-podman-quadlets
 
-The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten in Podman Quadlet.
+The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten using Podman Quadlet.
 
 ## Steps
 
-Clone to /etc/containers/systemd
+1. Clone to `/etc/containers/systemd`:
 
-`git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd`
+   ```shell
+   git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd
+   ```
 
-Clone to ~/.config/containers/systemd/ for rootless
+> [!NOTE]
+> For rootless Podman setups, clone the repository to `~/.config/containers/systemd/` instead.
 
-Go trough every .container file and replace the ${} variables with the needen value.
+2. Go through every `.container` file and replace the `${}` variables with the needed values.
 
-For example:
+   For example:
 
-```
-Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
---->
-Image=ghcr.io/immich-app/immich-server:release
-```
+   ```
+   Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
+   --->
+   Image=ghcr.io/immich-app/immich-server:release
+   ```
 
-See https://immich.app/docs/install/environment-variables for the default values
+   See [https://immich.app/docs/install/environment-variables](https://immich.app/docs/install/environment-variables) for the default values.
 
-Reload with
+3. Reload systemd:
 
-`systemctl daemon-reload`
+   ```shell
+   systemctl daemon-reload
+   ```
 
-or rootless:
+4. Then start Immich:
 
-`systemctl --user daemon-reload`
+   ```shell
+   systemctl start immich-server
+   ```
+> [!NOTE]
+> Run steps 3 and 4 with the `--user` argument for rootless setups.
 
-Then start with
+## Machine Learning
 
-`sytemctl start immich-server`
+You need to change the machine learning URL in the admin settings to `http://systemd-immich-machine-learning:3003` in order for it to work.
 
-or rootless:
-
-`systemctl --user start immich-server`
-
-## machine learning
-You need to change the machine learning url in the admin settings to `http://systemd-immich-machine-learning:3003` in order for machine learning to work
+---
