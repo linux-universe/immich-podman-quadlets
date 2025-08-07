@@ -4,6 +4,8 @@ The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/m
 
 Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki) for additional guides, such as Hardware Transcoding & Acceleration.
 
+>This guide serves as a stock base setup for Immich using Podman Quadlets. It closely follows the structure and intent of the official Docker Compose file provided by Immich. The goal is to provide a shared starting point the community can build upon. Instead of writing isolated full guides, consider contributing your enhancements or customizations to the [Wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki).
+
 ## Steps
 
 1. Either clone or manually write the quadlet files to `/etc/containers/systemd/immich`:
