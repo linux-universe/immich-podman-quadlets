@@ -2,7 +2,7 @@
 
 The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten using Podman Quadlet.
 
-Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki) for additional guides, such as one on using a pod file and adding Hardware Transcoding / Acceleration.
+Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki) for additional guides, such as Hardware Transcoding & Acceleration.
 
 ## Steps
 
