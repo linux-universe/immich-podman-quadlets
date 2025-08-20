@@ -21,10 +21,10 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
    For example:
 
-   ```
-   Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
+   ```diff
+   - Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
    --->
-   Image=ghcr.io/immich-app/immich-server:release
+   + Image=ghcr.io/immich-app/immich-server:release
    ```
 
    See [https://immich.app/docs/install/environment-variables](https://immich.app/docs/install/environment-variables) for the default values.
