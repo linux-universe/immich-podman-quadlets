@@ -23,7 +23,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
    ```diff
    - Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
-   --->
+   
    + Image=ghcr.io/immich-app/immich-server:release
    ```
 
