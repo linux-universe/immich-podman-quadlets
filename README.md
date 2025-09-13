@@ -1,4 +1,4 @@
-# immich podman quadlets handbook
+# Immich Podman Quadlets Handbook
 
 The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten using Podman Quadlet.
 
