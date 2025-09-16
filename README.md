@@ -1,10 +1,9 @@
 # Immich Podman Quadlets Handbook
+>This guide serves as a stock base setup for Immich using Podman Quadlets. It closely follows the structure and intent of the official Docker Compose file provided by Immich. The goal is to provide a shared starting point the community can build upon. Instead of writing isolated full guides, consider contributing your enhancements or customizations to the [Wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki).
 
 The original [Immich Docker Compose](https://github.com/immich-app/immich/blob/main/docker/docker-compose.yml) file rewritten using Podman Quadlet.
 
 Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki) for additional guides, such as Hardware Transcoding & Acceleration or running immich in a pod.
-
->This guide serves as a stock base setup for Immich using Podman Quadlets. It closely follows the structure and intent of the official Docker Compose file provided by Immich. The goal is to provide a shared starting point the community can build upon. Instead of writing isolated full guides, consider contributing your enhancements or customizations to the [Wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki).
 
 > [!NOTE]
 > ❓**Do I need a .env file?** ❓
