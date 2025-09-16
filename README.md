@@ -8,6 +8,18 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
 ## Steps
 
+> [!NOTE]
+> ❓**Do I need a .env file?** ❓
+> 
+> In this setup, **a separate .env file is not required**. All necessary environment variables are defined directly within the .container files. This is because systemd unit files do not support generic placeholders, so having a separate .env file wouldn’t be effective.
+> 
+> <details>
+>    <summary>Click for more details</summary>
+>    In the original compose file, there is a separate .env file for configuring your containers. I decided not to use one, as although systemd units support env files, it cannot use generic placeholders within unit (.container) files.
+>    
+>    This means users would need to edit both the unit and the .env file, defeating the purpose of having a single source of configuration.
+> </details>
+
 1. Either clone or manually write the quadlet files to `/etc/containers/systemd/immich`:
 
    ```shell
