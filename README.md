@@ -6,8 +6,6 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
 >This guide serves as a stock base setup for Immich using Podman Quadlets. It closely follows the structure and intent of the official Docker Compose file provided by Immich. The goal is to provide a shared starting point the community can build upon. Instead of writing isolated full guides, consider contributing your enhancements or customizations to the [Wiki](https://github.com/linux-universe/immich-podman-quadlets/wiki).
 
-## Steps
-
 > [!NOTE]
 > ❓**Do I need a .env file?** ❓
 > 
@@ -19,6 +17,8 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 >    
 >    This means users would need to edit both the unit and the .env file, defeating the purpose of having a single source of configuration.
 > </details>
+
+## Steps
 
 1. Either clone or manually write the quadlet files to `/etc/containers/systemd/immich`:
 
