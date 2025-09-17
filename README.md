@@ -11,7 +11,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 > [!NOTE]
 > ❓**Do I need a .env file?** ❓
 > 
-> In this setup, **a separate .env file is not required**. All necessary environment variables are defined directly within the .container files. This is because systemd unit files do not support generic placeholders, so having a separate .env file wouldn’t be effective.
+> In this setup, **a separate .env file is not required**. All necessary environment variables are defined directly within the .container files.
 > 
 > <details>
 >    <summary>Click for more details</summary>
