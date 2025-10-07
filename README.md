@@ -41,7 +41,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
    + Image=ghcr.io/immich-app/immich-server:release
    ```
 
-   See [https://immich.app/docs/install/environment-variables](https://immich.app/docs/install/environment-variables) for the default values.
+   See [this page](https://docs.immich.app/install/environment-variables) for the default values.
 
 3. Reload systemd:
 
