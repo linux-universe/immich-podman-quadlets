@@ -5,7 +5,7 @@ Description=Immich Redis
 #AutoUpdate=registry
 Network=immich.network
 HostName=redis
-Image=docker.io/valkey/valkey:8-bookworm
+Image=docker.io/valkey/valkey:8
 HealthCmd=redis-cli ping || exit 1
 
 [Service]
