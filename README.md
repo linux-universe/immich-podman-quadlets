@@ -38,7 +38,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
    ```diff
    - Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
    
-   + Image=ghcr.io/immich-app/immich-server:release
+   + Image=ghcr.io/immich-app/immich-server:v2
    ```
 
    See [this page](https://docs.immich.app/install/environment-variables) for the default values.
