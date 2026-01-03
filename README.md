@@ -19,6 +19,12 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 >    
 >    This means users would need to edit both the unit and the .env file, defeating the purpose of having a single source of configuration.
 > </details>
+>
+>--- 
+>
+>**Help**
+>
+>If you're struggling with the setup and it's not due to a bug, please open a [discussion](https://github.com/linux-universe/immich-podman-quadlets/discussions/new?category=help) and include the relevant logs and your quadlet files, rather than creating an issue.
 
 ## Steps
 
