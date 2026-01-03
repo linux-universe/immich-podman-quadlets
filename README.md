@@ -30,12 +30,11 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 
 1. Either clone or manually write the quadlet files to `/etc/containers/systemd/immich`:
 
+> For rootless Podman setups, clone the repository to `~/.config/containers/systemd/immich` instead.
+
    ```shell
    git clone https://github.com/linux-universe/immich-podman-quadlets.git /etc/containers/systemd/immich
    ```
-
-> [!NOTE]
-> For rootless Podman setups, clone the repository to `~/.config/containers/systemd/immich` instead.
 
 2. Go through every `.container` file and replace the `${}` variables with the needed values.
 
@@ -60,5 +59,5 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
    ```shell
    systemctl start immich-server
    ```
-> [!NOTE]
+   
 > Run steps 3 and 4 with the `--user` argument for rootless setups.
