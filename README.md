@@ -57,7 +57,7 @@ Check out the [wiki](https://github.com/linux-universe/immich-podman-quadlets/wi
 4. Then start Immich:
 
    ```shell
-   systemctl start immich-server
+   systemctl start immich-pod
    ```
    
 > Run steps 3 and 4 with the `--user` argument for rootless setups.
