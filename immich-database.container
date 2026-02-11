@@ -3,8 +3,7 @@ Description=Immich Database
 
 [Container]
 #AutoUpdate=registry
-Network=immich.network
-HostName=database
+Pod=immich.pod
 #you may want to take a look at https://github.com/immich-app/base-images/pkgs/container/postgres for alternative versions. DO NOT UPGRADE BETWEEN MAJOR VERSIONS!
 Image=ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 Environment=POSTGRES_PASSWORD=${DB_PASSWORD}
