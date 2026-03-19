@@ -1,5 +1,6 @@
 [Unit]
 Description=Immich Server
+Requires=immich-redis.container immich-database.container
 
 [Container]
 #AutoUpdate=registry
