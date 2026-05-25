@@ -1,5 +1,6 @@
 [Pod]
 PublishPort=2283:2283
+ShmSize=128mb
 
 [Install]
 WantedBy=default.target
