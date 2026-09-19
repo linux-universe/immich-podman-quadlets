@@ -3,4 +3,5 @@ PublishPort=2283:2283
 ShmSize=128mb
 
 [Install]
+# On rootful setups, consider changing this to 'multi-user.target' https://www.freedesktop.org/software/systemd/man/latest/systemd.special.html#default.target
 WantedBy=default.target
